@@ -19,8 +19,8 @@ jobs:
       with:
       # Deploy vars
         WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }}
-        WPE_ENV: apolloadvisorg
+        WPE_ENV: steelcityins
         # Deploy Options
-        REMOTE_PATH: "wp-content/themes/apolloadvisorgroup/"
+        REMOTE_PATH: "wp-content/themes/steelcityins/"
         PHP_LINT: TRUE
         CACHE_CLEAR: TRUE
