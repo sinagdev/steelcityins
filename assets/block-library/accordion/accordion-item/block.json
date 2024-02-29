@@ -1,0 +1,17 @@
+{
+	"apiVersion": 3,
+	"title": "Accordion Item",
+	"description": "An individual element of Accordion component that contains a Heading Title and a Body Content.",
+	"text-domain": "sinag",
+	"name": "sinag/accordion-item",
+	"parent": ["sinag/accordion"],
+	"icon": "text",
+	"category": "sinag-blocks",
+	"example": {},
+	"attributes": {
+		"templateItemRichText": {
+			"type": "string"
+		}
+	},
+	"supports": {}
+}

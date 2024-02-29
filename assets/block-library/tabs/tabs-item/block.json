@@ -1,0 +1,22 @@
+{
+	"apiVersion": 3,
+	"title": "Tabs Item",
+	"description": "The Tabs Item nested block.",
+	"text-domain": "sinag",
+	"name": "sinag/tabs-item",
+	"parent": ["sinag/tabs"],
+	"icon": "feedback",
+	"category": "sinag-blocks",
+	"example": {},
+	"attributes": {
+		"tabLabel": {
+			"type": "string",
+			"default": ""
+		},
+		"blockIndex": {
+			"type": "number",
+			"default": ""
+		}
+	},
+	"supports": {}
+}

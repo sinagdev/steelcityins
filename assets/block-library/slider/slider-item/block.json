@@ -1,0 +1,34 @@
+{
+	"apiVersion": 3,
+	"title": "Slider Item",
+	"description": "A slider element that contains text or media.",
+	"text-domain": "sinag",
+	"name": "sinag/slider-item",
+	"parent": ["sinag/slider"],
+	"icon": "images-alt",
+	"category": "sinag-blocks",
+	"example": {},
+	"attributes": {
+		"alt": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "img",
+			"attribute": "alt",
+			"default": ""
+		},
+		"url": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "img",
+			"attribute": "src"
+		}
+	},
+	"supports": {
+		"customClassName": true,
+		"fontSize": false,
+		"reusable": false,
+		"spacing": {
+			"padding": false
+		}
+	}
+}

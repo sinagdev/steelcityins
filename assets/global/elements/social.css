@@ -1,0 +1,76 @@
+/******************
+ *
+ * Social Share
+ *
+ ******************/
+
+ .social-share {
+  margin-bottom: 0;
+}
+
+/* .social-share li.social-icon:not(:last-child) {
+  margin-right: var(--spacer);
+} */
+
+.social-share li.social-icon a {
+  color: var(--white);
+  line-height: 1;
+  font-size: var(--fs-h3);
+  transition: all 0.5s ease-in-out;
+}
+
+.social-share li.social-icon a:hover i[class*="fa"] {
+  transition: all ease-out 0.25s;
+  transform: translateY(-1px);
+}
+
+.social-share li.social-icon a:hover [class*="facebook"] {
+  color: var(--facebook);
+}
+
+.social-share li.social-icon a:hover [class*="twitter"] {
+  color: var(--twitter);
+}
+
+.social-share li.social-icon a:hover [class*="instagram"] {
+  background: linear-gradient(
+    225deg,
+    var(--instagram-yellow),
+    var(--instagram-red),
+    var(--instagram-purple)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social-share li.social-icon a:hover [class*="youtube"] {
+  color: var(--youtube);
+}
+
+.social-share li.social-icon a:hover [class*="flickr"] {
+  background: linear-gradient(
+    to right,
+    var(--flickr-blue) 0%,
+    var(--flickr-blue) 50%,
+    var(--flickr-pink) 50%,
+    var(--flickr-pink) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social-share li.social-icon a:hover [class*="pinterest"] {
+  color: var(--pinterest);
+}
+
+.social-share li.social-icon a:hover [class*="linkedin"] {
+  color: var(--linkedin);
+}
+
+.social-share li.social-icon a:hover [class*="google-plus"] {
+  color: var(--google-plus);
+}
+
+.social-share li.social-icon a#mobileMenuContainer {
+  color: var(--black);
+}

@@ -1,0 +1,32 @@
+{
+	"apiVersion": 3,
+	"title": "Tabs",
+	"description": "The Tabs block.",
+	"text-domain": "sinag",
+	"name": "sinag/tabs",
+	"icon": "feedback",
+	"category": "sinag-blocks",
+	"example": {},
+	"attributes": {
+		"tabLabelsArray":{
+			"type": "array",
+			"default": []
+		},		
+		"updateChild":{
+			"type": "boolean",
+			"default": false
+		},		
+		"sideTabLayout":{
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"supports": {
+		"customClassName": true,
+		"align": ["wide", "full"],
+		"spacing": {
+			"margin": ["top", "bottom"],
+			"padding": ["top", "bottom"]
+		}
+	}
+}

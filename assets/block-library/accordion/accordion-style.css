@@ -1,0 +1,17 @@
+/**
+ * Accordion shared block styling
+ *
+ * This file gets shared between the
+ * theme and editor.
+ */
+
+ .accordion {
+	margin: auto;
+	@media screen and (min-width: 992px) {
+		min-width: 375px;
+	}
+
+	.accordion__item-heading {
+		margin: 0;
+	}
+}

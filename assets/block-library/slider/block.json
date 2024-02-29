@@ -1,0 +1,57 @@
+{
+	"apiVersion": 3,
+	"title": "Slider",
+	"description": "A revolving carousel that displays content like products or photos.",
+	"text-domain": "sinag",
+	"name": "sinag/slider",
+	"icon": "slides",
+	"category": "sinag-blocks",
+	"example": {},
+	"attributes": {
+		"blockId": {
+			"type": "string",
+			"default": ""
+		 },
+		"slidesPerView": {
+			"type": "number",
+			"default": 1
+		},
+		"slideSpeed": {
+			"type": "number",
+			"default": 1
+		},
+		"isSlideLoop": {
+			"type": "boolean",
+			"default": false
+		},
+		"addNavigation": {
+			"type": "boolean",
+			"default": false
+		},	
+		"addPagination": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"supports": {
+		"customClassName": true,
+		"align": ["wide", "full", "left", "right"],
+		"alignWide": false,
+		"anchor": false,
+		"color": {
+			"gradients": false,
+			"background": false,
+			"text": false
+		},
+		"defaultStylePicker": false,
+		"fontSize": false,
+		"html": false,
+		"inserter": true,
+		"lineHeight": true,
+		"multiple": true,
+		"reusable": false,
+		"spacing": {
+			"padding": false
+		}
+	}
+}

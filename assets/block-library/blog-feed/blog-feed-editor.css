@@ -1,0 +1,24 @@
+/**
+ * Blog Feed editor styling
+ *
+ * This file is for CSS admin overrides only.
+ * Use style.css for shared theme/editor block styling.
+ */
+@import "./*style.css";
+
+[data-type="sinag/blog-feed"] {
+	padding: 1rem 3rem;
+	background-color: #eee;
+	& .is-selected {
+		& b::after {
+			/* replace this demo code with your own: */
+			content: " (✎ editor.css) ";
+		}
+	}
+
+	/* placeholder card styles on editor view */
+	.swiper-slide{
+		width: calc(100% / 3.5);
+		margin-right: 1rem;
+	}
+}

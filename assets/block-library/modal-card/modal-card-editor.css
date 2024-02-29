@@ -1,0 +1,27 @@
+/**
+ * Modal Card editor styling
+ *
+ * This file is for CSS admin overrides only.
+ * Use style.css for shared theme/editor block styling.
+ */
+@import "./*style.css";
+
+[data-type="sinag/modal-card"] {
+  .card {
+    min-width: auto;
+  }
+
+  .modal-card-trigger {
+    .plus-button-hover {
+			display: block;
+		}
+  }
+
+  .modal-card-item {
+    &::before {
+      content: " (✎ popup/modal content here) ";
+	  position: relative;
+	  bottom: -1rem;
+    }
+  }
+}

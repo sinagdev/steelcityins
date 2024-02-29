@@ -1,0 +1,13 @@
+/**
+ * Modals shared block styling
+ *
+ * This file gets shared between the
+ * theme and editor.
+ */
+
+.modals {
+	& b::after {
+		/* replace this demo code with your own: */
+		content: " (❒ style.css) ";
+	}
+}

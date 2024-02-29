@@ -1,0 +1,36 @@
+{
+	"title": "Blurbs",
+	"description": "A set of Blurb items that combines both imagery and text to showcase certain features, you can use it to add a list of your company’s services on your homepage. The Blurb Module also allows you to turn your Blurb image/icon and title into a link to your service page. ",
+	"text-domain": "sinag",
+	"name": "sinag/blurbs",
+	"icon": "editor-kitchensink",
+	"category": "sinag-blocks",
+	"example": {
+		"attributes": {
+			"columns": 1
+		},
+		"innerBlocks":[
+			{
+				"name": "sinag/blurb",
+				"attributes":{
+					"url": "https://picsum.photos/seed/picsum/200/300",
+					"title": "Blurb Title",
+					"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed viverra tellus in hac habitasse platea dictumst vestibulum. Felis donec et odio pellentesqute diam volutpat commodo sed egestas."
+				}
+			}
+		]
+	},
+	"attributes": {
+		"columns": {
+			"type": "number"
+		}
+	},
+	"supports": {
+		"customClassName": true,
+		"align": ["wide", "full"],
+		"spacing": {
+			"padding": true,
+			"margin": true
+		}
+	}
+}

@@ -1,0 +1,26 @@
+name: Deploy to staging
+on:
+  push:
+    branches:
+     - stage
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2    
+      with:
+        node-version: '16'        
+    - run: npm install
+    - run: npm run build
+
+    - name: GitHub Action Deploy to WP Engine
+      uses: wpengine/github-action-wpe-site-deploy@v3
+      with:
+      # Deploy vars
+        WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }}
+        WPE_ENV: apolloadvisstg
+        # Deploy Options
+        REMOTE_PATH: "wp-content/themes/apolloadvisorgroup/"
+        PHP_LINT: TRUE
+        CACHE_CLEAR: TRUE

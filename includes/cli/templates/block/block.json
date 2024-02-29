@@ -1,0 +1,24 @@
+{
+	"apiVersion": 3,
+	"title": "template-title",
+	"description": "template-desc",
+	"text-domain": "sinag",
+	"name": "sinag/template-slug",
+	"icon": "feedback",
+	"category": "sinag-blocks",
+	"example": {},
+	"attributes": {
+		"demoText": {
+			"type": "string",
+			"default": "(remove this demo attribute)"
+		}
+	},
+	"supports": {
+		"customClassName": true,
+		"align": ["wide", "full"],
+		"spacing": {
+			"margin": ["top", "bottom"],
+			"padding": ["top", "bottom"]
+		}
+	}
+}

@@ -1,0 +1,97 @@
+.error404 {
+  .site-main{
+    padding-top: 18rem;
+  }
+
+  @media (max-width: 767px) {
+    .site-main{
+      padding-top: 12rem;
+    }
+
+    .wp-block-button__link, .wp-element-button  {
+      padding: 20px 10px !important
+    }
+  }
+}
+
+.not-found,
+.template-404 {
+  background: #0414a7;
+  color: #e0e2f4;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found h1,
+.not-found p,
+.not-found a,
+.template-404 h1,
+.template-404 p,
+.template-404 a {
+  color: #e0e2f4;
+}
+
+.not-found a,
+.not-found p,
+.template-404 a,
+.template-404 p {
+  font: normal 20px/1.25rem "VT323", monospace;
+}
+
+.not-found h1,
+.template-404 h1 {
+  font: normal 2.75rem/1.05em "VT323", monospace;
+}
+
+.not-found .container,
+.template-404 .container {
+  width: 90%;
+  margin: auto;
+  max-width: 640px;
+  min-height: 50vh;
+}
+
+.not-found .bsod,
+.template-404 .bsod {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.not-found .bsod .neg,
+.template-404 .bsod .neg {
+  text-align: center;
+  color: #0414a7;
+}
+
+.not-found .bsod .neg .bg,
+.template-404 .bsod .neg .bg {
+  background: #aaaaaa;
+  padding: 0 15px 2px 13px;
+}
+
+.not-found .bsod .title,
+.template-404 .bsod .title {
+  margin-bottom: 50px;
+}
+
+.not-found .bsod .nav,
+.template-404 .bsod .nav {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.not-found .bsod .nav .link,
+.template-404 .bsod .nav .link {
+  text-decoration: none;
+  padding: 0 9px 2px 8px;
+}
+
+.not-found .bsod .nav .link:hover,
+.not-found .bsod .nav .link:focus,
+.template-404 .bsod .nav .link:hover,
+.template-404 .bsod .nav .link:focus {
+  background: #aaaaaa;
+  color: #0414a7;
+}

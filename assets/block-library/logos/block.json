@@ -1,0 +1,35 @@
+{
+	"title": "Logos",
+	"description": "A set of elements that consists of brands/companies related to the website.",
+	"text-domain": "sinag",
+	"name": "sinag/logos",
+	"icon": "buddicons-replies",
+	"category": "sinag-blocks",
+	"example": {},
+	"attributes": {
+		"blockId": {
+			"type": "string",
+			"default": ""
+		 },
+		"slidesPerView": {
+			"type": "number",
+			"default": 4
+		},
+		"slideSpeed": {
+			"type": "number",
+			"default": 5
+		}
+	},
+	"supports": {
+		"sinagClassName": true,
+		"align": ["left","center", "right"],
+		"alignWide": false,
+		"anchor": false,
+		"multiple": true,
+		"reusable": false,
+		"spacing": {
+			"padding": true,
+			"margin": true
+		}
+	}
+}

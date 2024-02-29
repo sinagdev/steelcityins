@@ -1,0 +1,9 @@
+/**
+ * Editor styling
+ */
+.sinag-media-remove {
+	display: none;
+	:is(.is-selected, .has-child-selected) & {
+		display: block;
+	}
+}

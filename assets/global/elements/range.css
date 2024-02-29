@@ -1,0 +1,264 @@
+
+/* Range
+   ========================================================================== */
+   .range-field {
+	position: relative;
+}
+
+input[type="range"],
+input[type="range"] + .thumb {
+	cursor: pointer;
+}
+
+input[type="range"] {
+	position: relative;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	width: 100%;
+	margin: 15px 0;
+	padding: 0;
+}
+
+input[type="range"]:focus {
+	outline: none;
+}
+
+input[type="range"] + .thumb {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	border: none;
+	height: 0;
+	width: 0;
+	border-radius: 50%;
+	background-color: #26a69a;
+	margin-left: 7px;
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+input[type="range"] + .thumb .value {
+	display: block;
+	width: 30px;
+	text-align: center;
+	color: #26a69a;
+	font-size: 0;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+input[type="range"] + .thumb.active {
+	border-radius: 50% 50% 50% 0;
+}
+
+input[type="range"] + .thumb.active .value {
+	color: #fff;
+	margin-left: -1px;
+	margin-top: 8px;
+	font-size: 10px;
+}
+
+input[type="range"] {
+	-webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+	height: 3px;
+	background: #c2c0c2;
+	border: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	border: none;
+	height: 14px;
+	width: 14px;
+	border-radius: 50%;
+	background: #26a69a;
+	-webkit-transition: -webkit-box-shadow 0.3s;
+	transition: -webkit-box-shadow 0.3s;
+	transition: box-shadow 0.3s;
+	transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+	-webkit-appearance: none;
+	background-color: #26a69a;
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	margin: -5px 0 0 0;
+}
+
+.keyboard-focused input[type="range"]:focus:not(.active)::-webkit-slider-thumb {
+	-webkit-box-shadow: 0 0 0 10px rgba(38, 166, 154, 0.26);
+	box-shadow: 0 0 0 10px rgba(38, 166, 154, 0.26);
+}
+
+input[type="range"] {
+	/* fix for FF unable to apply focus style bug  */
+	border: 1px solid white;
+	/*required for proper track sizing in FF*/
+}
+
+input[type="range"]::-moz-range-track {
+	height: 3px;
+	background: #c2c0c2;
+	border: none;
+}
+
+input[type="range"]::-moz-focus-inner {
+	border: 0;
+}
+
+input[type="range"]::-moz-range-thumb {
+	border: none;
+	height: 14px;
+	width: 14px;
+	border-radius: 50%;
+	background: #26a69a;
+	-webkit-transition: -webkit-box-shadow 0.3s;
+	transition: -webkit-box-shadow 0.3s;
+	transition: box-shadow 0.3s;
+	transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+	margin-top: -5px;
+}
+
+input[type="range"]:-moz-focusring {
+	outline: 1px solid #fff;
+	outline-offset: -1px;
+}
+
+.keyboard-focused input[type="range"]:focus:not(.active)::-moz-range-thumb {
+	box-shadow: 0 0 0 10px rgba(38, 166, 154, 0.26);
+}
+
+input[type="range"]::-ms-track {
+	height: 3px;
+	background: transparent;
+	border-color: transparent;
+	border-width: 6px 0;
+	/*remove default tick marks*/
+	color: transparent;
+}
+
+input[type="range"]::-ms-fill-lower {
+	background: #777;
+}
+
+input[type="range"]::-ms-fill-upper {
+	background: #ddd;
+}
+
+input[type="range"]::-ms-thumb {
+	border: none;
+	height: 14px;
+	width: 14px;
+	border-radius: 50%;
+	background: #26a69a;
+	-webkit-transition: -webkit-box-shadow 0.3s;
+	transition: -webkit-box-shadow 0.3s;
+	transition: box-shadow 0.3s;
+	transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.keyboard-focused input[type="range"]:focus:not(.active)::-ms-thumb {
+	box-shadow: 0 0 0 10px rgba(38, 166, 154, 0.26);
+}
+
+/**
+* CHIPS - Chips can be used to represent small blocks of information. They are most commonly used either for contacts or for tags.
+**/
+
+.chip {
+	display: inline-block;
+	height: 32px;
+	font-size: 13px;
+	font-weight: 500;
+	color: rgba(0, 0, 0, 0.6);
+	line-height: 32px;
+	padding: 0 12px;
+	border-radius: 16px;
+	background-color: #e4e4e4;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+
+.chip:focus {
+	outline: none;
+	background-color: #26a69a;
+	color: #fff;
+}
+
+.chip > img {
+	float: left;
+	margin: 0 8px 0 -12px;
+	height: 32px;
+	width: 32px;
+	border-radius: 50%;
+}
+
+.chip .close {
+	cursor: pointer;
+	float: right;
+	font-size: 16px;
+	line-height: 32px;
+	padding-left: 8px;
+}
+
+.chips {
+	border: none;
+	border-bottom: 1px solid #9e9e9e;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	margin: 0 0 8px 0;
+	min-height: 45px;
+	outline: none;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.chips.focus {
+	border-bottom: 1px solid #26a69a;
+	-webkit-box-shadow: 0 1px 0 0 #26a69a;
+	box-shadow: 0 1px 0 0 #26a69a;
+}
+
+.chips:hover {
+	cursor: text;
+}
+
+.chips .input {
+	background: none;
+	border: 0;
+	color: rgba(0, 0, 0, 0.6);
+	display: inline-block;
+	font-size: 16px;
+	height: 3rem;
+	line-height: 32px;
+	outline: 0;
+	margin: 0;
+	padding: 0 !important;
+	width: 120px !important;
+}
+
+.chips .input:focus {
+	border: 0 !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.chips .autocomplete-content {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.prefix ~ .chips {
+	margin-left: 3rem;
+	width: 92%;
+	width: calc(100% - 3rem);
+}
+
+.chips:empty ~ label {
+	font-size: 0.8rem;
+	-webkit-transform: translateY(-140%);
+	transform: translateY(-140%);
+}

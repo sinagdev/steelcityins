@@ -1,0 +1,28 @@
+{
+  "apiVersion": 3,
+  "title": "Modal Card",
+  "description": "The Modal Card block consists of a Modal Card as a trigger and Modal Card Item as a popup content.",
+  "text-domain": "sinag",
+  "name": "sinag/modal-card",
+  "icon": "feedback",
+  "category": "sinag-blocks",
+  "example": {},
+  "attributes": {
+    "blockId": {
+      "type": "string",
+      "default": ""
+    },
+    "modalCardTarget": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "customClassName": true,
+    "align": ["wide", "full"],
+    "spacing": {
+      "margin": ["top", "bottom"],
+      "padding": ["top", "bottom"]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+/*
+* Acessibility Styles configuration for ADA & WCAG Standards
+*/
+
+button:focus,
+button:focus-within,
+button:focus-visible {
+	outline: none;
+	border: 1px solid var(--accessibility-color);
+	-webkit-box-shadow: 0px 0px 5px var(--accessibility-color);
+	box-shadow: 0px 0px 5px var(--accessibility-color);
+}
+
+.skip-link {
+	background: var(--accessibility-color);
+	height: 30px;
+	left: 50% !important;
+	padding: 8px;
+	position: absolute;
+	transform: translateY(-100%);
+	transition: transform 0.3s;
+
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	width: 1px;
+}
+
+.skip-link:focus,
+.skip-link:focus-within,
+.skip-link:focus-visible {
+	transform: translateY(0%);
+}
+

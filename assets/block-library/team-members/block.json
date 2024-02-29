@@ -1,0 +1,38 @@
+{
+	"apiVersion": 3,
+	"title": "Team Members",
+	"description": "A Team Members component is a set of elements that displays a bio of individual Team Member.",
+	"text-domain": "sinag",
+	"name": "sinag/team-members",
+	"icon": "groups",
+	"category": "sinag-blocks",
+	"example": {
+		"attributes": {
+			"columns": 2
+		},
+		"innerBlocks":[
+			{
+				"name": "sinag/team-members",
+				"attributes":{
+					"name": "Jane Doe",
+					"bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed viverra tellus in hac habitasse platea dictumst vestibulum. Felis donec et odio pellentesque diam volutpat commodo sed egestas.",
+					"url": "https://picsum.photos/seed/picsum/200/300"
+				}
+			}
+		]
+	},
+	"attributes": {
+		"columns": {
+			"type": "number"
+		}
+	},
+	"supports": {
+		"customClassName": true,
+		"align": ["wide", "full"],
+		"reusable": false,
+		"spacing": {
+			"padding": true,
+			"margin": true
+		}
+	}
+}

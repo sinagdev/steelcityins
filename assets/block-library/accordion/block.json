@@ -1,0 +1,42 @@
+{
+	"apiVersion": 3,
+	"title": "Accordion",
+	"description": "A vertical stack of interactive headings used to toggle the display of further information; each item can be [collapsed] with just a short label visible or [expanded] to show the full content.",
+	"text-domain": "sinag",
+	"name": "sinag/accordion",
+	"icon": "tagcloud",
+	"category": "sinag-blocks",
+	"example": {},
+	"attributes": {
+		"blockId": {
+			"type": "string",
+			"default": ""
+		 },
+		"align": {
+			"type": "string",
+			"default": "none"
+		}
+	},
+	"supports": {
+		"customClassName": true,
+		"align": ["left", "center", "right"],
+		"alignWide": false,
+		"anchor": false,
+		"color": {
+			"gradients": false,
+			"background": false,
+			"text": false
+		},
+		"defaultStylePicker": false,
+		"fontSize": false,
+		"html": false,
+		"inserter": true,
+		"lineHeight": true,
+		"multiple": true,
+		"reusable": true,
+		"spacing": {
+			"padding": true,
+			"margin": true
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"apiVersion": 3,
+	"title": "template-item-title",
+	"description": "template-item-desc",
+	"text-domain": "sinag",
+	"name": "sinag/template-item-slug",
+	"parent": ["sinag/template-slug"],
+	"icon": "feedback",
+	"category": "sinag-blocks",
+	"example": {},
+	"attributes": {
+		"demoText": {
+			"type": "string",
+			"default": "(remove this demo attribute)"
+		}
+	},
+	"supports": {}
+}

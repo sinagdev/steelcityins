@@ -1,0 +1,46 @@
+{
+	"title": "Blurb",
+	"description": "A line or short paragraph (20-50 words) that evaluates (or at least summarizes) what the reader will find at the other end of a link.",
+	"text-domain": "sinag",
+	"name": "sinag/blurb",
+	"parent": ["sinag/blurbs"],
+	"icon": "images-alt",
+	"category": "sinag-blocks",
+	"example": {},
+	"attributes": {
+		"id": {
+			"type": "number"
+		},
+		"alt": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "img",
+			"attribute": "alt",
+			"default": ""
+		},
+		"url": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "img",
+			"attribute": "src"
+		},
+		"title": {
+			"type": "string",
+			"source": "html",
+			"selector": "h4"
+		},
+		"text": {
+			"type": "string",
+			"source": "html",
+			"selector": "p"
+		}
+	},
+	"supports": {
+		"customClassName": true,
+		"fontSize": false,
+		"reusable": false,
+		"spacing": {
+			"padding": false
+		}
+	}
+}

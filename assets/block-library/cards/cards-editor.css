@@ -1,0 +1,225 @@
+/**
+ * Cards editor styling
+ *
+ * This file is for CSS admin overrides only.
+ * Use style.css for shared theme/editor block styling.
+ */
+
+@import "./*style.css";
+
+.wp-block-sinag-cards {
+  display: block;
+}
+
+/* Styles for inner blocks container */
+.wp-block-sinag-cards .block-editor-inner-blocks {
+  padding: 10px;
+}
+
+/* Styles for block-list-appender */
+.wp-block-sinag-cards
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  > .block-list-appender {
+  position: relative;
+  align-self: stretch;
+  border: 1px dashed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* Styles for different column layouts */
+
+/* 1 Column Layout */
+.wp-block-sinag-cards.has-1-columns
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  [data-type="sinag/card"] {
+  width: calc(100% / 1 - 20px);
+}
+
+.wp-block-sinag-cards.has-1-columns
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  .block-list-appender {
+  width: calc(100% / 1);
+  min-height: calc(50vh / 1);
+}
+
+/* 2 Column Layout */
+.wp-block-sinag-cards.has-2-columns
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  [data-type="sinag/card"] {
+  width: calc(100% / 2 - 20px);
+}
+
+.wp-block-sinag-cards.has-2-columns
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  .block-list-appender {
+  width: calc(100% / 2);
+  min-height: calc(50vh / 2);
+}
+
+/* 3 Column Layout */
+.wp-block-sinag-cards.has-3-columns
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  [data-type="sinag/card"] {
+  width: calc(100% / 3 - 20px);
+}
+
+.wp-block-sinag-cards.has-3-columns
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  .block-list-appender {
+  width: calc(100% / 3);
+  min-height: calc(50vh / 3);
+}
+
+/* 4 Column Layout */
+.wp-block-sinag-cards.has-4-columns
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  [data-type="sinag/card"] {
+  width: calc(100% / 4 - 20px);
+}
+
+.wp-block-sinag-cards.has-4-columns
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  .block-list-appender {
+  width: calc(100% / 4);
+  min-height: calc(50vh / 4);
+}
+
+/* 5 Column Layout */
+.wp-block-sinag-cards.has-5-columns
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  [data-type="sinag/card"] {
+  width: calc(100% / 5 - 20px);
+}
+
+.wp-block-sinag-cards.has-5-columns
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  .block-list-appender {
+  width: calc(100% / 5);
+  min-height: calc(50vh / 5);
+}
+
+/* 6 Column Layout */
+.wp-block-sinag-cards.has-6-columns
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  [data-type="sinag/card"] {
+  width: calc(100% / 6 - 20px);
+}
+
+.wp-block-sinag-cards.has-6-columns
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  .block-list-appender {
+  width: calc(100% / 6);
+  min-height: calc(50vh / 6);
+}
+
+/* Additional styles for various block types */
+
+.wp-block-sinag-cards
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout {
+  display: flex;
+  flex-wrap: wrap;
+
+  [data-type="sinag/card"] {
+    max-width: none;
+    margin: var(--spacer-1);
+    width: 100%;
+
+    > .wp-block-sinag-card,
+    .block-editor-inner-blocks
+      > .block-editor-block-list__layout
+      .block-list-appender {
+      width: 100%;
+    }
+
+    .block-editor-inner-blocks
+      > .block-editor-block-list__layout
+      .block-list-appender {
+      margin-top: var(--spacer);
+      min-height: 5vh;
+    }
+
+    /*Image upload loading styles*/
+    > .wp-block-sinag-card__img {
+      position: relative;
+      margin-bottom: 1rem;
+
+      &.is_loading img {
+        opacity: 0.3;
+      }
+
+      .components-spinner {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+  }
+}
+
+/* Image block */
+.wp-block-sinag-cards
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  > [data-type="sinag/card"]
+  > .wp-block-sinag-card__img {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.wp-block-image .components-resizable-box__container {
+  display: block;
+  margin: auto;
+}
+
+.wp-block-sinag-cards
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  > [data-type="sinag/card"]
+  > .wp-block-sinag-card__img.is_loading
+  img {
+  opacity: 0.3;
+}
+
+.wp-block-sinag-cards
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  > [data-type="sinag/card"]
+  > .wp-block-sinag-card__img
+  .components-spinner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* Paragraph block */
+.wp-block-sinag-cards
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  > [data-type="core/image"] {
+  width: 100%;
+  display: block;
+  margin: 0 auto 1rem;
+}

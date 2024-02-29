@@ -1,0 +1,12 @@
+/**
+ * Header
+ *
+ * Header Styles divided in 3 parts:
+ * - Header Variables: to be decided
+ * - Header Layout: this file defines layout of the header with reusable classes
+ * - Header Styles: file used for colors, fonts, random padding adjustments etc.
+ * - Header Search: specific for header searchbar
+ */
+ @import "../../global/style.css";
+ @import "./styles/menu-layout.css";
+ @import "./styles/menu-base.css";

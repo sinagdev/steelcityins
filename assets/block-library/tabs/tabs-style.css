@@ -1,0 +1,79 @@
+/**
+ * Tabs shared block styling
+ *
+ * This file gets shared between the
+ * theme and editor.
+ */
+
+.tabs {
+  & b::after {
+    /* replace this demo code with your own: */
+    content: " (❒ style.css) ";
+  }
+}
+
+.wp-block-sinag-tabs .tab-labels {
+  padding-left: 0;
+}
+
+.wp-block-sinag-tabs .tab-labels .tab-label {
+  display: inline-block;
+  list-style: none;
+  padding: 1em 2em 0.5em;
+  margin: 2.5px;
+  cursor: pointer;
+  transition: color 0.28s ease-in-out, border-bottom 0.28s ease-in-out;
+}
+
+.wp-block-sinag-tabs .tab-labels .tab-label.active {
+  background-color: var(--white);
+}
+
+.wp-block-sinag-tabs .tab-labels .tab-label.active,
+.wp-block-sinag-tabs .tab-labels .tab-label:focus,
+.wp-block-sinag-tabs .tab-labels .tab-label:hover {
+  border-bottom: 4px solid var(--primary);
+}
+
+.wp-block-sinag-tabs .tab-content .tab-panel {
+  display: none;
+}
+
+.wp-block-sinag-tabs .tab-content .tab-panel.active {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .wp-block-sinag-tabs.side-tab-layout {
+    display: flex;
+    width: 100%;
+  }
+
+  .wp-block-sinag-tabs.side-tab-layout .tab-labels {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--light-gray);
+  }
+
+  .wp-block-sinag-tabs.side-tab-layout .tab-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wp-block-sinag-tabs.side-tab-layout .tab-panel.active {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wp-block-sinag-tabs.side-tab-layout
+    .tab-panel.active
+    .wp-block-cgb-block-page-section {
+    flex: 1;
+  }
+
+  .wp-block-sinag-tabs.side-tab-layout .tab-panel.active > * {
+    padding: 0 2rem;
+  }
+}

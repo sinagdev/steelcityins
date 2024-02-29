@@ -1,0 +1,74 @@
+{
+	"apiVersion": 3,
+	"title": "Blog Feed",
+	"description": "Dynamically displays the WP Default Posts",
+	"text-domain": "sinag",
+	"name": "sinag/blog-feed",
+	"icon": "excerpt-view",
+	"category": "sinag-blocks",
+	"example": {},
+	"attributes": {
+		"blockId": {
+			"type": "string",
+			"default": ""
+		 },
+		"numberOfPosts": {
+			"type": "number",
+			"default": 6
+		},
+		"order": {
+			"type": "string",
+			"default": "desc"
+		},
+		"orderBy": {
+			"type": "string",
+			"default": "date"
+		},
+		"categories": {
+			"type": "array",
+			"items": {
+				"type": "object"
+			}
+		},
+		"blogFeedSwiper": {
+			"type": "array",
+			"items": {
+				"type": "object"
+			}
+		},
+		"slidesPerView": {
+			"type": "number",
+			"default": 3.5
+		},	
+		"addNavigation": {
+			"type": "boolean",
+			"default": false
+		},	
+		"addPagination": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"supports": {
+		"customClassName": true,
+		"align": ["wide", "full", "left", "right"],
+		"alignWide": false,
+		"anchor": false,
+		"color": {
+			"gradients": false,
+			"background": false,
+			"text": false
+		},
+		"defaultStylePicker": false,
+		"fontSize": false,
+		"html": false,
+		"inserter": true,
+		"lineHeight": true,
+		"multiple": true,
+		"reusable": true,
+		"spacing": {
+			"padding": true,
+			"margin": true
+		}
+	}
+}

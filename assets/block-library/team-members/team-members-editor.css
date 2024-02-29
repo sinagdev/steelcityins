@@ -1,0 +1,301 @@
+/**
+ * Team Members editor styling
+ *
+ * This file is for CSS admin overrides only.
+ * Use style.css for shared theme/editor block styling.
+ */
+
+@import "./*style.css";
+
+/* .wp-block-sinag-team-members */
+.wp-block-sinag-team-members {
+  display: block;
+}
+
+/* Styles for inner blocks container */
+.wp-block-sinag-team-members .block-editor-inner-blocks {
+  padding: 10px;
+}
+
+/* Styles for .block-editor-block-list__block */
+[data-type="sinag/team-members"].block-editor-block-list__block,
+[data-type="sinag/team-member"].block-editor-block-list__block {
+  padding: var(--spacer-3);
+}
+
+/* Styles for .block-editor-block-list__block with [data-type="sinag/team-members"] */
+[data-type="sinag/team-members"].block-editor-block-list__block {
+  background-color: #eee;
+}
+
+/* Styles for .block-editor-block-list__block with [data-type="sinag/team-member"] */
+[data-type="sinag/team-member"].block-editor-block-list__block {
+  background-color: var(--white);
+}
+
+/* Styles for block-list-appender */
+.wp-block-sinag-team-members
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  > .block-list-appender {
+  position: relative;
+  align-self: stretch;
+  border: 1px dashed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* Styles for block-list-appender__toggle */
+.wp-block-sinag-team-members
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  > .block-list-appender__toggle {
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  z-index: 2;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Styles for different column layouts */
+
+/* 1 Column Layout */
+.wp-block-sinag-team-members.has-1-columns
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  [data-type="sinag/team-member"] {
+  width: calc(100% / 1 - 20px);
+}
+
+.wp-block-sinag-team-members.has-1-columns
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  > .block-list-appender {
+  width: calc(100% / 1);
+  min-height: calc(50vh / 1);
+}
+
+/* 2 Column Layout */
+.wp-block-sinag-team-members.has-2-columns
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  [data-type="sinag/team-member"] {
+  width: calc(100% / 2 - 20px);
+}
+
+.wp-block-sinag-team-members.has-2-columns
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  > .block-list-appender {
+  width: calc(100% / 2);
+  min-height: calc(50vh / 2);
+}
+
+/* 3 Column Layout */
+.wp-block-sinag-team-members.has-3-columns
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  [data-type="sinag/team-member"] {
+  width: calc(100% / 3 - 20px);
+}
+
+.wp-block-sinag-team-members.has-3-columns
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  > .block-list-appender {
+  width: calc(100% / 3);
+  min-height: calc(50vh / 3);
+}
+
+/* 4 Column Layout */
+.wp-block-sinag-team-members.has-4-columns
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  [data-type="sinag/team-member"] {
+  width: calc(100% / 4 - 20px);
+}
+
+.wp-block-sinag-team-members.has-4-columns
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  > .block-list-appender {
+  width: calc(100% / 4);
+  min-height: calc(50vh / 4);
+}
+
+/* 5 Column Layout */
+.wp-block-sinag-team-members.has-5-columns
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  [data-type="sinag/team-member"] {
+  width: calc(100% / 5 - 20px);
+}
+
+.wp-block-sinag-team-members.has-5-columns
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  > .block-list-appender {
+  width: calc(100% / 5);
+  min-height: calc(50vh / 5);
+}
+
+/* 6 Column Layout */
+.wp-block-sinag-team-members.has-6-columns
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  [data-type="sinag/team-member"] {
+  width: calc(100% / 6 - 20px);
+}
+
+.wp-block-sinag-team-members.has-6-columns
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  > .block-list-appender {
+  width: calc(100% / 6);
+  min-height: calc(50vh / 6);
+}
+
+/* Additional styles for various block types */
+
+/* Styles for .block-editor-block-list__layout */
+.wp-block-sinag-team-members
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Styles for [data-type="sinag/team-member"] */
+[data-type="sinag/team-member"] {
+  max-width: none;
+  margin: auto;
+  width: 100%;
+}
+
+/* Styles for .wp-block-sinag-team-member__img */
+[data-type="sinag/team-member"] > .wp-block-sinag-team-member__img {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+/* Styles for .wp-block-sinag-team-member__img when is_loading */
+[data-type="sinag/team-member"]
+  > .wp-block-sinag-team-member__img.is_loading
+  img {
+  opacity: 0.3;
+}
+
+/* Styles for .wp-block-sinag-team-member__img .components-spinner */
+[data-type="sinag/team-member"]
+  > .wp-block-sinag-team-member__img
+  .components-spinner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* Styles for [data-type="sinag/team-member"] + [data-type="sinag/team-member"] */
+[data-type="sinag/team-member"] + [data-type="sinag/team-member"] {
+  margin: 10px;
+}
+
+/* Styles for [data-type="core/image"] */
+[data-type="core/image"] {
+  width: 100%;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+/* Styles for [data-type="core/image"] > .wp-element-caption */
+[data-type="core/image"] > .wp-element-caption {
+  display: none;
+}
+
+/* Styles for [data-type="core/paragraph"] */
+[data-type="core/paragraph"] {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Styles for [data-type="core/social-links"] */
+[data-type="core/social-links"] {
+  margin-left: 0;
+}
+
+/* Styles for [data-type="core/social-links"] when is-selected */
+[data-type="core/social-links"].is-selected {
+  transition: all 0.25s ease-in-out;
+  padding: 1rem;
+}
+
+/* Styles for [data-type="core/social-links"] .block-list-appender */
+[data-type="core/social-links"] .block-list-appender {
+  position: relative;
+  min-height: 50px;
+  width: 50px;
+  align-self: stretch;
+  border: 1px dashed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* Styles for .wp-block-image .components-resizable-box__container */
+.wp-block-image .components-resizable-box__container {
+  display: block;
+  margin: auto;
+}
+
+/* Styles for .wp-block-sinag-team-members > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="sinag/team-member"] > .wp-block-sinag-team-member__img */
+.wp-block-sinag-team-members
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  > [data-type="sinag/team-member"]
+  > .wp-block-sinag-team-member__img {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+/* Styles for .wp-block-sinag-team-members > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="sinag/team-member"] > .wp-block-sinag-team-member__img when is_loading */
+.wp-block-sinag-team-members
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  > [data-type="sinag/team-member"]
+  > .wp-block-sinag-team-member__img.is_loading
+  img {
+  opacity: 0.3;
+}
+
+/* Styles for .wp-block-sinag-team-members > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="sinag/team-member"] > .wp-block-sinag-team-member__img .components-spinner */
+.wp-block-sinag-team-members
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  > [data-type="sinag/team-member"]
+  > .wp-block-sinag-team-member__img
+  .components-spinner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* Styles for .wp-block-sinag-team-members > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="core/image"] */
+.wp-block-sinag-team-members
+  > .block-editor-inner-blocks
+  > .block-editor-block-list__layout
+  > [data-type="core/image"] {
+  width: 100%;
+  display: block;
+  margin: 0 auto 1rem;
+}

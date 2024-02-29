@@ -1,0 +1,104 @@
+/**
+ * Cards shared block styling
+ *
+ * This file gets shared between the
+ * theme and editor.
+ */
+
+.wp-block-sinag-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wp-block-sinag-cards.has-1-columns .wp-block-sinag-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: transparent;
+  padding: calc(var(--spacer) * 1.5);
+}
+
+/* Styles for .has-1-columns */
+.wp-block-sinag-cards.has-1-columns .wp-block-sinag-card {
+  width: calc(100% / 1 - 20px);
+}
+
+/* Styles for .has-2-columns */
+.wp-block-sinag-cards.has-2-columns .wp-block-sinag-card {
+  width: calc(100% / 2 - 20px);
+}
+
+/* Styles for .has-3-columns */
+.wp-block-sinag-cards.has-3-columns .wp-block-sinag-card {
+  width: calc(100% / 3 - 20px);
+}
+
+/* Styles for .has-4-columns */
+.wp-block-sinag-cards.has-4-columns .wp-block-sinag-card {
+  width: calc(100% / 4 - 20px);
+}
+
+/* Styles for .has-5-columns */
+.wp-block-sinag-cards.has-5-columns .wp-block-sinag-card {
+  width: calc(100% / 5 - 20px);
+}
+
+/* Styles for .has-6-columns */
+.wp-block-sinag-cards.has-6-columns .wp-block-sinag-card {
+  width: calc(100% / 6 - 20px);
+}
+
+/* Medium viewport and up */
+@media (min-width: 768px) {
+  .wp-block-sinag-cards {
+    justify-content: space-between;
+  }
+}
+
+/* Medium viewport */
+@media (min-width: 768px) and (max-width: 991px) {
+  .wp-block-sinag-cards .wp-block-sinag-card {
+    width: calc(100% / 2 - 20px);
+  }
+}
+
+/* Small viewport */
+@media (max-width: 767px) {
+  .wp-block-sinag-cards .wp-block-sinag-card {
+    width: 100%;
+  }
+}
+
+/* Single card styles */
+
+.wp-block-sinag-card {
+  padding: var(--card-spacer-y) var(--card-spacer-x);
+  .card-title,
+	.card-body {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.card-title {
+		margin-bottom: 0;
+	}
+	.card-body {
+		margin-top: 0;
+		color: var(--tertiary);
+		font-family: var(--ff-2);
+		font-weight: 600;
+		font-size: 14.0355px;
+		line-height: 138.6%;
+		letter-spacing: 0.175em;
+		text-transform: uppercase;
+	}
+}
+
+.wp-block-sinag-card figure {
+  display: block;
+  margin: 0 auto var(--spacer-4);
+}
+
+.wp-block-image img {
+  display: block;
+  margin: auto;
+}

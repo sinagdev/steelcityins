@@ -1,0 +1,47 @@
+{
+	"apiVersion": 3,
+	"title": "Team Member",
+	"description": "The Team Member nested block.",
+	"text-domain": "sinag",
+	"name": "sinag/team-member",
+	"parent": ["sinag/team-members"],
+	"icon": "admin-users",
+	"category": "sinag-blocks",
+	"example": {},
+	"attributes": {
+		"name": {
+			"type": "string",
+			"source": "html",
+			"selector": "h4"
+		},
+		"bio": {
+			"type": "string",
+			"source": "html",
+			"selector": "p"
+		},
+		"id": {
+			"type": "number"
+		},
+		"alt": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "img",
+			"attribute": "alt",
+			"default": ""
+		},
+		"url": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "img",
+			"attribute": "src"
+		}
+	},
+	"supports": {
+		"customClassName": true,
+		"fontSize": false,
+		"reusable": false,
+		"spacing": {
+			"padding": false
+		}
+	}
+}

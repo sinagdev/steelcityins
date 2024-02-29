@@ -1,0 +1,33 @@
+{
+	"apiVersion": 3,
+	"title": "Logo",
+	"description": "The Logo nested block.",
+	"text-domain": "sinag",
+	"name": "sinag/logo",
+	"parent": ["sinag/logos"],
+	"icon": "buddicons-replies",
+	"category": "sinag-blocks",
+	"example": {},
+	"attributes": {
+		"slidesPerView": {
+			"type": "number",
+			"default": 4
+		},
+		"slideSpeed": {
+			"type": "number",
+			"default": 5
+		}
+	},
+	"supports": {
+		"sinagClassName": true,
+		"align": ["left","center", "right"],
+		"alignWide": false,
+		"anchor": false,
+		"multiple": true,
+		"reusable": false,
+		"spacing": {
+			"padding": true,
+			"margin": true
+		}
+	}
+}

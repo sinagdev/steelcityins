@@ -1,0 +1,38 @@
+/**
+ * Counters shared block styling
+ *
+ * This file gets shared between the
+ * theme and editor.
+ */
+
+.counters {
+	& b::after {
+		/* replace this demo code with your own: */
+		content: " (❒ style.css) ";
+	}
+}
+
+.counters .card {
+    padding: var(--card-spacer-y) var(--card-spacer-x);
+    margin: var(--spacer-2);
+}
+
+.counters .card-header > [class*="fa-"] {
+    font-size: var(--fs-h3);
+}
+
+.counters .card-header,
+.counters .counters__title {
+    text-align: center;
+}
+
+.counters__title {
+    margin: 0 auto var(--spacer);
+}
+
+.counters__number {
+    font-size: var(--fs-h2);
+    font-weight: 700;
+    margin-left: 0.35rem;
+    margin-right: 0.35rem;
+}

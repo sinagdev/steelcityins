@@ -1,0 +1,155 @@
+/**
+ * Modal Card shared block styling
+ *
+ * This file gets shared between the
+ * theme and editor.
+ */
+
+
+
+/* Modal Styles */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-card-container {
+  position: relative;
+}
+
+.modal-card-overlay {
+  display: none;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(246, 246, 246, 0.75);
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.modal-card-popup {
+  display: none;
+  width: 100%;
+  max-width: 90%;
+  max-height: 95%;
+  overflow-y: auto;
+  padding: 3rem 1.5rem;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  border: 1px none #000000;
+  box-shadow: 1px 1px 3px 0px rgba(2, 2, 2, 0.5);
+  background-color: #f6f6f6;
+  animation: fadeIn 0.3s ease-in-out;
+
+  @media (min-width: 992px){
+	max-width: 65%;
+	padding: 3rem 6rem;
+  }
+}
+
+.modal-card-header {
+  text-align: right;
+}
+
+.modal-card-close {
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  height: 48px;
+  width: 48px;
+  padding: 12px;
+  color: var(--primary);
+  font-size: 18px;
+  font-weight: 700 !important;
+  line-height: 16px;
+  border-radius: 225px;
+  box-shadow: 1px 1px 3px 0px rgba(2, 2, 2, 0.23);
+  background-color: var(--secondary);
+
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: var(--tertiary);
+    color: var(--white);
+  }
+
+  @media (max-width: 768px) {
+	top: 1.5rem;
+	right: 1.5rem;
+  }
+}
+
+/* Trigger Styles */
+.modal-card-trigger {
+  cursor: pointer;
+  padding: 0 0 1.697rem;
+  box-shadow: none !important;
+
+  .plus-button-hover {
+    display: none;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    height: 34.41px;
+    width: 34.41;
+
+    > .wp-block-button__link {
+		transition: all 0.3s ease-in-out;
+      color: var(--primary) !important;
+      font-size: 25px;
+      font-weight: 400;
+      background-color: var(--secondary) !important;
+      border-radius: 100% !important;
+      padding: 0 12px 0 14px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+      > .wp-block-button__link {
+        background-color: var(--tertiary) !important;
+        color: var(--white) !important;
+      }
+    }
+  }
+
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 9px 7px 20px rgba(0, 0, 0, 0.07) !important;
+    .plus-button-hover {
+      display: block;
+    }
+  }
+
+  /* iPad Pro */
+  @media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
+    > .card-body{
+      font-size: 13px;
+    }
+  }
+
+  /* Mobile  */
+  @media (max-width: 768px) {
+	&.wp-block-button {
+	  width: auto !important;
+	}
+	> .wp-block-button__link {
+	  width: auto;
+	}
+  }
+}

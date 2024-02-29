@@ -1,0 +1,68 @@
+{
+	"apiVersion": 3,
+	"title": "Counters",
+	"description": "A component that displays and animate numerical data.",
+	"text-domain": "sinag",
+	"name": "sinag/counters",
+	"icon": "ellipsis",
+	"category": "sinag-blocks",
+	"example": {},
+	"attributes": {
+		"prependIcon":{
+			"type": "string"
+		},
+		"counterValue": {
+			"type": "string",
+			"default": "0"
+		},
+		"appendIcon":{
+			"type": "string"
+		},
+		"duration":{
+			"type": "number",
+			"default": 1
+		},
+		"useEasing":{
+			"type": "boolean",
+			"default": true 
+		},
+		"useGrouping":{
+			"type": "boolean",
+			"default": true
+		},
+		"separator":{
+			"type": "string",
+			"default": ","
+		},
+		"decimal":{
+			"type": "string",
+			"default": "."
+		},
+		"decimalPlaces":{
+			"type": "number",
+			"default": 0
+		}
+	},
+	"supports": {
+		"customClassName": true,
+		"align": ["wide", "full", "left", "right"],
+		"alignWide": false,
+		"anchor": false,
+		"color": {
+			"gradients": false,
+			"background": false,
+			"text": false
+		},
+		"defaultStylePicker": false,
+		"fontSize": false,
+		"html": false,
+		"inserter": true,
+		"lineHeight": true,
+		"multiple": true,
+		"reusable": false,
+		"spacing": {
+			"padding": true,
+			"margin": true
+		}
+	}
+}

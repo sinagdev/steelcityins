@@ -1,0 +1,69 @@
+/**
+ * Tabs editor styling
+ *
+ * This file is for CSS admin overrides only.
+ * Use style.css for shared theme/editor block styling.
+ */
+@import "./*style.css";
+
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.block-editor-block-list__block.wp-block.wp-block-sinag-tabs {
+  border: 1px dotted var(--gray);
+  background: var(--white);
+  padding: 1em;
+}
+
+.block-editor-block-list__block.wp-block.wp-block-sinag-tabs h2 {
+  font-size: 1em;
+}
+
+.wp-block-sinag-tab {
+  background-color: var(--gray);
+  padding: 5px;
+  margin-bottom: 1em;
+}
+
+.block-editor-inner-blocks {
+  background-color: var(--white);
+}
+
+.block-editor-inner-blocks h4 {
+  font-size: 0.75em;
+}
+
+[data-type="sinag/tabs"].block-editor-block-list__block .block-list-appender {
+  position: relative;
+  align-self: stretch;
+  border: 1px dashed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.25);
+  width: 100%;
+  min-height: 10vh;
+  margin-top: 15px;
+}
+
+[data-type="sinag/tabs"].block-editor-block-list__block
+  .block-editor-inner-blocks
+  .block-editor-block-list__layout
+  .block-list-appender {
+  min-height: 5vh;
+  border-bottom: 1px dashed;
+}
+
+[data-type="sinag/tabs"] >.block-editor-block-list__empty-block-inserter.block-editor-block-list__empty-block-inserter,
+.block-editor-default-block-appender .block-editor-inserter {
+  right: -2.5rem;
+}
+
+[data-type="sinag/tabs-item"] {
+	border-top: 1px dashed var(--black);
+	border-bottom: 1px dashed var(--black);
+	padding: var(--spacer) var(--spacer) var(--spacer-5);
+}

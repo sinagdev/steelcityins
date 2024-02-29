@@ -1,0 +1,33 @@
+{
+	"apiVersion": 3,
+	"title": "Modals",
+	"description": "The Modals block.",
+	"text-domain": "sinag",
+	"name": "sinag/modals",
+	"icon": "feedback",
+	"category": "sinag-blocks",
+	"example": {},
+	"attributes": {
+		"blockId": {
+			"type": "string",
+			"default": ""
+		 },
+		 "modalTarget": {
+			"type": "string",
+			"default": ""
+		 },
+		 "variation": {
+			"type": "string",
+			"default": "trigger"
+		}
+	},
+	"supports": {
+		"customClassName": true,
+		"align": ["left", "center", "right"],
+		"alignWide": false,
+		"spacing": {
+			"padding": true,
+			"margin": true
+		}
+	}
+}

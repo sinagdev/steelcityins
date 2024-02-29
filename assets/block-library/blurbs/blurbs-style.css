@@ -1,0 +1,84 @@
+/* Blurbs shared block styling */
+.wp-block-sinag-blurbs {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: calc(var(--spacer) * 1.5);
+    padding-bottom: calc(var(--spacer) * 1.5);
+}
+
+.wp-block-sinag-blurbs.has-1-columns .wp-block-sinag-blurb,
+.wp-block-sinag-blurbs.has-2-columns .wp-block-sinag-blurb,
+.wp-block-sinag-blurbs.has-3-columns .wp-block-sinag-blurb,
+.wp-block-sinag-blurbs.has-4-columns .wp-block-sinag-blurb,
+.wp-block-sinag-blurbs.has-5-columns .wp-block-sinag-blurb,
+.wp-block-sinag-blurbs.has-6-columns .wp-block-sinag-blurb {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: transparent;
+    padding: calc(var(--spacer) * 1.5);
+}
+
+.wp-block-sinag-blurbs.has-1-columns .wp-block-sinag-blurb {
+    width: calc(100% / 1 - 20px);
+}
+
+.wp-block-sinag-blurbs.has-2-columns .wp-block-sinag-blurb {
+    width: calc(100% / 2 - 20px);
+}
+
+.wp-block-sinag-blurbs.has-3-columns .wp-block-sinag-blurb {
+    width: calc(100% / 3 - 20px);
+}
+
+.wp-block-sinag-blurbs.has-4-columns .wp-block-sinag-blurb {
+    width: calc(100% / 4 - 20px);
+}
+
+.wp-block-sinag-blurbs.has-5-columns .wp-block-sinag-blurb {
+    width: calc(100% / 5 - 20px);
+}
+
+.wp-block-sinag-blurbs.has-6-columns .wp-block-sinag-blurb {
+    width: calc(100% / 6 - 20px);
+}
+
+.wp-block-sinag-blurbs > .blurb,
+.wp-block-sinag-blurbs > .block-editor-inner-blocks > .block-editor-block-list__layout .blurb {
+    padding: calc(var(--spacer) * 1.5);
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.wp-block-sinag-blurbs > .blurb,
+.wp-block-sinag-blurbs > .block-editor-inner-blocks > .block-editor-block-list__layout .blurb {
+    @media (max-width: 767px) {
+        margin: var(--spacer-2) auto;
+    }
+}
+
+.blurb__icon {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.blurb__icon > .wp-element-caption {
+    display: none;
+}
+
+.blurb__link {
+    list-style: none;
+}
+
+.blurb__link a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.blurb__link a:hover {
+    color: var(--secondary);
+}

@@ -1,0 +1,37 @@
+{
+	"title": "Cards",
+	"description": "Cards consists of interactive elements such as text, links, buttons or images but they suggest just one main action.",
+	"text-domain": "sinag",
+	"name": "sinag/cards",
+	"icon": "columns",
+	"category": "sinag-blocks",
+	"example": {
+		"attributes": {
+			"columns": 2
+		},
+		"innerBlocks":[
+			{
+				"name": "sinag/card",
+				"attributes":{
+					"title": "Jane Doe",
+					"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed viverra tellus in hac habitasse platea dictumst vestibulum. Felis donec et odio pellentesque diam volutpat commodo sed egestas.",
+					"url": "https://picsum.photos/seed/picsum/200/300"
+				}
+			}
+		]
+	},
+	"attributes": {
+		"columns": {
+			"type": "number"
+		}
+	},
+	"supports": {
+		"customClassName": true,
+		"align": ["wide", "full"],
+		"reusable": true,
+		"spacing": {
+			"padding": true,
+			"margin": true
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+  "apiVersion": 3,
+  "title": "Modals Trigger",
+  "description": "The Modals Trigger nested block.",
+  "text-domain": "sinag",
+  "name": "sinag/modals-trigger",
+  "parent": ["sinag/modals"],
+  "icon": "feedback",
+  "category": "sinag-blocks",
+  "example": {},
+  "attributes": {},
+  "supports": {
+    "customClassName": true,
+    "fontSize": true,
+    "reusable": false,
+    "spacing": {
+      "padding": false
+    }
+  }
+}

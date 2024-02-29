@@ -1,0 +1,74 @@
+/**
+ * Modals editor styling
+ *
+ * This file is for CSS admin overrides only.
+ * Use style.css for shared theme/editor block styling.
+ */
+@import "./*style.css";
+
+[data-type="sinag/modals"] {
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  padding: var(--spacer) var(--spacer) var(--spacer-5);
+  & .is-selected {
+    border: 1px dashed;
+  }
+  & .is-selected:not(.btn) {
+    padding: 10px;
+  }
+}
+
+.card {
+  min-width: auto;
+  width: 100% !important;
+  padding: 0 !important;
+}
+
+.modal-trigger > .block-editor-inner-blocks {
+  padding: 0 !important;
+}
+
+[data-type="sinag/modals"].block-editor-block-list__block {
+  background-color: #eee;
+}
+
+[data-type="sinag/modals-trigger"].block-editor-block-list__block,
+[data-type="sinag/modals-item"].block-editor-block-list__block {
+  background-color: #fff;
+}
+
+/* Styles for block-list-appender */
+[data-type="sinag/modals"].block-editor-block-list__block .block-list-appender {
+  position: relative;
+  align-self: stretch;
+  border: 1px dashed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.25);
+  width: 100%;
+  min-height: 10vh;
+  margin-top: 15px;
+}
+
+[data-type="sinag/modals"].block-editor-block-list__block
+  .block-editor-inner-blocks
+  .block-editor-block-list__layout
+  .block-list-appender {
+  min-height: 5vh;
+  background: rgba(225, 225, 225, 0.25);
+}
+
+/* .wp-block-sinag-modals */
+.wp-block-sinag-modals {
+  display: block;
+}
+/* Styles for inner blocks container */
+.wp-block-sinag-modals .block-editor-inner-blocks {
+  padding: var(--spacer);
+}
+
+/* Modal content - add that popup depth effect */
+.modal-item {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+  background: rgba(225, 225, 225, 0.05);
+}

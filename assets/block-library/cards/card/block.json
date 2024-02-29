@@ -1,0 +1,46 @@
+{
+	"title": "Card",
+	"description": "Card consists of interactive elements such as text, links, buttons or images but they suggest just one main action.",
+	"text-domain": "sinag",
+	"name": "sinag/card",
+	"parent": ["sinag/cards"],
+	"icon": "cover-image",
+	"category": "sinag-blocks",
+	"example": {},
+	"attributes": {
+		"title": {
+			"type": "string",
+			"source": "html",
+			"selector": "h5"
+		},
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": "p"
+		},
+		"id": {
+			"type": "number"
+		},
+		"alt": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "img",
+			"attribute": "alt",
+			"default": ""
+		},
+		"url": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "img",
+			"attribute": "src"
+		}
+	},
+	"supports": {
+		"customClassName": true,
+		"fontSize": true,
+		"reusable": false,
+		"spacing": {
+			"padding": false
+		}
+	}
+}

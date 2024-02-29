@@ -1,0 +1,59 @@
+/**
+ * Team Members shared block styling
+ *
+ * This file gets shared between the
+ * theme and editor.
+ */
+
+.wp-block-sinag-team-members {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wp-block-sinag-team-member {
+  padding: var(--spacer);
+}
+
+/* Styles for .has-1-columns */
+.wp-block-sinag-team-members.has-1-columns .wp-block-sinag-team-member {
+  width: calc(100% / 1 - 20px);
+}
+
+/* Styles for .has-2-columns */
+.wp-block-sinag-team-members.has-2-columns .wp-block-sinag-team-member {
+  width: calc(100% / 2 - 20px);
+}
+
+/* Styles for .has-3-columns */
+.wp-block-sinag-team-members.has-3-columns .wp-block-sinag-team-member {
+  width: calc(100% / 3 - 20px);
+}
+
+/* Styles for .has-4-columns */
+.wp-block-sinag-team-members.has-4-columns .wp-block-sinag-team-member {
+  width: calc(100% / 4 - 20px);
+}
+
+/* Styles for .has-5-columns */
+.wp-block-sinag-team-members.has-5-columns .wp-block-sinag-team-member {
+  width: calc(100% / 5 - 20px);
+}
+
+/* Styles for .has-6-columns */
+.wp-block-sinag-team-members.has-6-columns .wp-block-sinag-team-member {
+  width: calc(100% / 6 - 20px);
+}
+
+/* Medium viewport */
+@media (min-width: 768px) and (max-width: 991px) {
+  .wp-block-sinag-team-members .wp-block-sinag-team-member {
+    width: calc(100% / 2 - 20px);
+  }
+}
+
+/* Small viewport */
+@media (max-width: 767px) {
+  .wp-block-sinag-team-members .wp-block-sinag-team-member {
+    width: 100%;
+  }
+}

@@ -1,0 +1,58 @@
+{
+	"name": "sinag",
+	"version": "3.0.2",
+	"description": "Parcel build tool for Aquamarine",
+	"private": true,
+	"engines": {
+		"nodeVersion": ">=16.13.2",
+		"npmVersion": ">=7.11.2"
+	},
+	"config": {
+		"lint_paths": "./assets",
+		"build_paths": "./assets/*/*.bundle.js ./assets/*/*.bundle.css ./assets/block-library/*/*script.js ./assets/block-library/*/*style.css",
+		"watch_paths": "./dist/**/*.css,./dist/**/*.js,./**/*.php"
+	},
+	"scripts": {
+		"start": "npm-run-all --parallel builder server",
+		"build": "npm run clean && parcel build $npm_package_config_build_paths --no-cache && npm run build:post",
+		"build:post": "npm run static",
+		"builder": "parcel watch $npm_package_config_build_paths",
+		"server": "browser-sync start --logFileChanges=`grep LOG_FILE_CHANGES= .env | cut -d '=' -f2` --proxy `grep URL= .env | cut -d '=' -f2` --files $npm_package_config_watch_paths",
+		"static": "del ./dist/static/* && ncp ./assets/static ./dist/static --filter '**/*.*'",
+		"docs": "docsify serve docs --open --port 4000",
+		"lint": "eslint $npm_package_config_lint_paths",
+		"reset": "npm run clean && npm run start",
+		"clean": "del ./.parcel-cache/*"
+	},
+	"author": "@tcmulder",
+	"license": "ISC",
+	"@parcel/transformer-css": {
+		"drafts": {
+			"nesting": true
+		}
+	},
+	"browserslist": "> 0.25%, last 2 versions, not dead",
+	"devDependencies": {
+		"@parcel/resolver-glob": "^2.9.3",
+		"@parcel/transformer-svg-react": "^2.9.3",
+		"@wordpress/element": "^5.19.0",
+		"@wordpress/icons": "^9.29.0",
+		"browser-sync": "^2.29.3",
+		"classnames": "^2.3.2",
+		"countup.js": "^2.8.0",
+		"debounce": "^1.2.1",
+		"del-cli": "^5.0.0",
+		"docsify-cli": "^4.4.4",
+		"eslint-config-wesbos": "^3.2.3",
+		"ncp": "^2.0.0",
+		"npm-run-all": "^4.1.5",
+		"parcel": "^2.9.3",
+		"process": "^0.11.10",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"dependencies": {
+		"aos": "^3.0.0-beta.6",
+		"google-map-react": "^2.2.1"
+	}
+}

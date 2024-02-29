@@ -1,0 +1,55 @@
+.pagination{
+    margin: var(--spacer-5) auto;
+    text-align: center;
+}
+
+.pagination .page-numbers {
+    display: inline-block;
+    border-radius: 2px;
+    text-align: center;
+    vertical-align: top;
+    height: 30px;
+    color: #444;
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    line-height: 30px;
+    cursor: pointer;
+    transition: all var(--animate);
+  }
+  
+  
+  .pagination .current{
+    background-color: var(--primary);
+    color: var(--hover-primary);
+    &:hover{
+      background-color: var(--secondary);
+      color: var(--hover-secondary);
+    }
+  }
+  
+
+  .pagination .page-numbers i {
+    font-size: 2rem;
+    color: var(--tertiary);
+    &:hover{
+      color: var(--hover-tertiary);
+    }
+  }
+  
+
+  @media only screen and (max-width: 992px) {
+    .pagination {
+      width: 100%;
+    }
+    .pagination a.prev,
+    .pagination a.next {
+      width: 10%;
+    }
+    /* .pagination a.pages {
+      width: 80%;
+      overflow: hidden;
+      white-space: nowrap;
+    } */
+  }
+  

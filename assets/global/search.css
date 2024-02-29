@@ -1,0 +1,25 @@
+.searchform {
+	background-color: var(--white);
+	width: 100%;
+	z-index: 100;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 1rem !important;
+  }
+  
+  .searchform .input-group--overlay {
+	width: var(--header-container-width);
+	max-width: var(--header-container-maxwidth);
+	background-color: var(--white);
+	margin: auto !important;
+	padding: 1.5rem 0 1rem;
+	display: none;
+  }
+  
+  .searchform .input-group--overlay .prefix {
+	top: 50%;
+	left: 0.65rem;
+	transform: translateY(-50%);
+  }
+  

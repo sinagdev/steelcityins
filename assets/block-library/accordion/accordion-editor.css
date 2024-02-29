@@ -1,0 +1,59 @@
+/**
+ * Accordion editor styling
+ *
+ * This file is for CSS admin overrides only.
+ * Use style.css for shared theme/editor block styling.
+ */
+ @import "./*style.css";
+
+ [data-type="sinag/accordion"] {
+   overflow-wrap: unset;
+   border: 0;
+   box-shadow: none;
+   padding: 1rem 3rem;
+   background-color: #eee;
+ }
+ 
+ [data-type="sinag/accordion"] .collapsible-body {
+   display: block;
+ }
+ 
+ /* stylelint-disable-next-line selector-class-pattern */
+ 
+ [data-type="sinag/accordion"] .block-list-appender {
+   position: relative;
+   align-self: stretch;
+   width: 100%;
+   min-height: 10vh;
+   border: 1px dashed;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: rgba(0, 0, 0, 0.25);
+ }
+ 
+ [data-type="sinag/accordion"] .block-list-appender__toggle {
+   position: absolute;
+   list-style: none;
+   padding: 0;
+   z-index: 2;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   height: 100%;
+   width: 100%;
+ }
+ 
+ [data-type="sinag/accordion-item"] {
+   background-color: var(--white);
+ }
+ 
+ [data-type="sinag/accordion-item"].is-selected .block-list-appender {
+   min-height: 100%;
+   background-color: transparent;
+ }
+ 
+ [data-type="sinag/accordion-item"] .accordion__item-heading {
+   padding: 1rem 2rem;
+   border-bottom: 1px solid var(--gray);
+ }
