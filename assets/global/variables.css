@@ -14,11 +14,11 @@
 	--fs-h5: calc((18 / var(--fs)) * 1em);
 	--fs-h6: calc((16 / var(--fs)) * 1em);
 	--fs-big: 	calc((18 / var(--fs)) * 1em);
-	--fs-small:	calc((14 / var(--fs)) * 1em);
+	--fs-small:	calc((15 / var(--fs)) * 1em);
 	--fs-normal: 1em;
 
-	--ff-1: 'Roboto', sans-serif;
-	--ff-2: 'Roboto', sans-serif;
+	--ff-1: 'Jost', sans-serif;
+	--ff-2: 'Jost', sans-serif;
 
 	/* layout */
 	--sp-raw-s: 10;		--sp-s:calc((var(--sp-raw-s)/var(--fs))*1em);--sp-rem-s:calc((var(--sp-raw-s)/var(--fs))*1rem);
@@ -54,7 +54,7 @@
 
 	/* theme colors */
 	--primary: #000000;
-	--secondary: #EAA900;
+	--secondary: #FFB800;
 	--tertiary: #585858;
 
 	--hover-primary: var(--white);
