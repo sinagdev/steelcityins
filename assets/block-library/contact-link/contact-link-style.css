@@ -1,0 +1,54 @@
+/**
+ * Contact Link shared block styling
+ *
+ * This file gets shared between the
+ * theme and editor.
+ */
+
+.contact-link-url {
+  text-decoration: none;
+  transition: all var(--animate);
+}
+
+.contact-link-url:hover {
+  > .contact-link-icon {
+    background-color: var(--black);
+    color: var(--secondary);
+  }
+  > .contact-link-text {
+    color: var(--secondary);
+  }
+}
+
+.contact-link-icon {
+  background-color: var(--secondary);
+  color: var(--black);
+  padding: var(--spacer);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; 
+  vertical-align: middle; 
+  width: 43.06px; 
+  height: 43.06px; 
+}
+
+.contact-link-icon i, .contact-link-icon svg{
+  font-size: 22px;
+}
+
+.contact-link-text {
+  color: var(--black);
+  font-size: 1.25vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 var(--spacer);
+
+  @media only screen and (min-width: 600px) and (orientation: portrait) {
+    font-size: 1vw;
+  }
+  
+  @media (max-width: 768px) {
+    font-size: var(--fs-h4);
+  }
+}

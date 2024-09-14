@@ -1,0 +1,36 @@
+{
+  "apiVersion": 3,
+  "title": "Contact Link",
+  "description": "Icon + Link component",
+  "text-domain": "sinag",
+  "name": "sinag/contact-link",
+  "icon": "feedback",
+  "category": "sinag-blocks",
+  "example": {},
+  "attributes": {
+    "linkUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "linkText": {
+      "type": "string",
+      "default": "Contact Link Text"
+    },
+    "linkIcon": {
+      "type": "string",
+      "default": "font-awesome"
+    },
+    "linkInNewTab": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "customClassName": true,
+    "align": ["wide", "full"],
+    "spacing": {
+      "margin": ["top", "bottom"],
+      "padding": ["top", "bottom"]
+    }
+  }
+}
